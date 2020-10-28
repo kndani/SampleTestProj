@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="softwaretestingmaterial" parallel="tests">
+    <parameter name="temp" value="Testing Para" />
+    <test name="testngTest">
+
+        <classes>
+            <class name="TestSample">
+            <methods>
+                <include name="test1"/>
+                <exclude name="test2"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="testngTest1">
+
+        <classes>
+            <class name="TestSample" />
+        </classes>
+    </test>
+</suite>
